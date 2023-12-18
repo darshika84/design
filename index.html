@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            background-attachment: fixed;
+        }
+
+        body {
+            margin: 0;
+            position: relative;
+        }
+
+        #img-container {
+            position: relative;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        #img {
+            /* max-height: 100%; */
+            max-width: 100%;
+            /* position: relative; */
+
+        }
+
+        #logo {
+
+            margin: 1cm;
+            height: 2%;
+            width: 20%;
+        }
+
+        #ph1 {
+            max-height: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 6cm;
+            left: 15.5cm;
+            /* z-index: 2; */
+
+        }
+
+        .box-conainer {
+            position: absolute;
+            top: 6cm;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* z-index: 2; */
+
+            /* height: 7cm;
+            width: 100%;
+            background-color: yellow; */
+        }
+
+        .box {
+            /* position: absolute;
+            /* top: 30%; */
+            /* left: 10%;  */
+            /* transform: translate(-50%, -50%); */
+            height: 7cm;
+            width: 8cm;
+            display: inline-block;
+            background-color: white;
+            box-shadow: 1px 10px 10px lightgrey;
+            margin: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 10px;
+
+        }
+
+        .contain {
+            top: 13%;
+            left: 7%;
+            position: absolute;
+
+        }
+
+        .top-left {
+            position: absolute;
+            /* line-height:60px; */
+            top: 2.5%;
+            left: 50px;
+            color: aliceblue;
+            /* font-size: 80px; */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .p {
+            font-size: 30px;
+            margin-top: 3cm;
+        }
+
+        #b1 {
+            height: 1.3cm;
+            width: 5cm;
+            border-radius: 25px;
+            background: none;
+            color: white;
+            border-color: white;
+        }
+
+        #b1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .ax {
+            /* margin-top: 2cm; */
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .dev {
+            /* height: 5cm;          
+            width: auto; */
+            /* display: inline; */
+            margin: 20px;
+            height: 7cm;
+            width: 7cm;
+            display: inline-block;
+
+        }
+
+        .device {
+            position: absolute;
+
+        }
+
+        #section1 {
+            height: 2000px;
+            /* background-color: pink;   */
+        }
+
+        #section2 {
+            height: 450px;
+            background-color: rgb(119, 119, 216);
+            padding: 2cm;
+
+
+        }
+
+        .p1 {
+            color: white;
+            font-style: bold;
+            margin-left: 2cm;
+            font-size: 70px;
+            line-height: 75px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .p2 {
+            color: aliceblue;
+            font-size: larger;
+            margin-left: 2.1cm;
+            line-height: 10px;
+        }
+
+        .container4 {
+            position: center;
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+
+
+        }
+
+        .box4 {
+
+            margin: 120px;
+            height: 7cm;
+            width: 8.2cm;
+            display: inline-block;
+
+        }
+
+        #section4 {
+            height: 850px;
+        }
+
+        #section5 {
+            background-image: url("img/ph3.png");
+            background-repeat: no-repeat;
+            background-color: black;
+            height: 650px;
+            padding-top: 50px;
+            padding-right: 80px;
+            background-position: left;
+            background-size: 40%;
+
+        }
+
+        #b2 {
+            height: 1.3cm;
+            width: 5cm;
+            border-radius: 25px;
+            background: none;
+            color: white;
+            border-color: white;
+            float: right;
+        }
+
+        #b2:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .pod6 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        #section6 {
+            height: 600px;
+
+        }
+
+        #section7 {
+            background-color: rgb(141, 64, 106);
+            height: 500px;
+            padding: 70px;
+            padding-left: 140px;
+            background-image: url("img/pc.png");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 50%;
+
+        }
+
+        #section8 {
+
+            height: 80px;
+            padding: 30px;
+            padding-right: 250px;
+            padding-left: 180px;
+        }
+
+        #b3 {
+            height: 1.3cm;
+            width: 5cm;
+            border-radius: 25px;
+            background: none;
+            color: black;
+            border-color: black;
+            float: right;
+            /* margin-right: 200px; */
+            float: right;
+            margin-top: 10px;
+        }
+
+        #b3:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .main8-content {
+            display: inline-block;
+            vertical-align: top;
+            max-width: 70%;
+        }
+
+        .main8-content p {
+            font-size: 30px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main" id="section1">
+        <img src="img\samsung_logo_PNG4.png" id="logo" />
+
+        <div class="top-left">
+            <div class="p">
+                <h1>Discover a <br>world without<br> limits</h1>
+            </div>
+            <h3>It doesn't take a genius to see why switching to the<br> Galaxy S9 | S9+ is a good idea.</h3>
+            <button id="b1">LEARN MORE</button>
+        </div>
+        <div class="box-container">
+            <img src="img\86.png" id="ph1" />
+
+            <img src="img\bg1.png" id="img">
+            <div class="contain">
+                <div class="box">
+                    <h1 style="color:rgb(66, 2, 66);">Water Tested</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nisi earum at esse saepe.
+                    </p>
+                    <div style='font-size:80px;'>&#8594</div>
+                </div>
+                <div class="box">
+                    <h1 style="color: palevioletred;">Carved Frame</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nisi earum at esse saepe.
+                    </p>
+                    <div style='font-size:80px;'>&#8594</div>
+
+                </div>
+                <div class="box">
+                    <h1 style="color: blueviolet;">Curved Glass</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nisi earum at esse saepe.
+                    </p>
+                    <div style='font-size:80px;'>&#8594</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="ax">
+            <strong>
+                <p>Explore other Galaxy devices.</p>
+            </strong>
+            <div class="device">
+                <div class="dev">
+                    <img src="img\phone.jpg" alt="phone" style="height: 11cm;" />
+                    <p>phone</p>
+                </div>
+                <div class="dev">
+                    <img src="img\tab.jpg" alt="Tablets" style="height: 11cm;" />
+                    <p>Tablets</p>
+                </div>
+                <div class="dev">
+                    <img src="img\watch.jpg" alt="Wearables" style="height: 11cm;" />
+                    <p>Wearables</p>
+                </div>
+                <div class="dev">
+                    <img src="img\vr.jpg" alt="Virtual Reality" style="height: 11cm;" />
+                    <p>Virtual Reality
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="main" id="section2">
+        <p class="p1">The new super<br> powerful <br>Galaxy Note9</p>
+        <h3 class="p2">Meet the latest member of the Galaxy family.</h3>
+    </div>
+    <br>
+    <div class="main3" id="section3">
+        <strong>
+            <p style="font-size: 40px;text-align: center; ">
+                Connect to everything important to you</p>
+        </strong>
+    </div>
+    <div class="main4" id="section4">
+        <div class="container4">
+            <div class="box4">
+                <img src="img\watch2.jpg" alt="watch" />
+                <p style="font-size: 27px;text-align: center;margin-left: 54px; width: 300px;">
+                    An untethered watch for an <br>untethered life.
+                </p>
+                <p style="font-size: 18px; text-align: center; width: 350px;
+                ;margin-left: 40px;"> The new Galaxy Watch connects via Bluetooth and LTE, so you can text, call, and
+                    run your day while
+                    leaving your phone at home.
+                </p>
+            </div>
+            <div class="box4">
+                <img src="img\bga.jpg" alt="img" />
+                <p style="font-size: 27px;text-align: center;margin-left: 90px;width: 300px;">
+                    Turn your phone
+                    into your wallet.
+                </p>
+                <p style="font-size: 18px; text-align: center; width: 370px;
+                ;margin-left: 50px;">
+                    Forgot your cash and cards at home? No problem—with Samsung Pay right on your phone, you're always
+                    ready to pick up the check.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="main5" id="section5">
+        <p style="color: aliceblue;font-size: 60px;color: aliceblue;text-align: right;">
+            Galaxy Note9:<br> See what else it<br> can do.
+        </p>
+        <p style="text-align: right;color: aliceblue;font-size:large;">
+            The Galaxy Note9 is packed with features to up your photo game<br>
+            and connect you more deeply with the things that are important <br>
+            to you. See how it's redefining the smartphone.Meet the latest<br>
+            member of the Galaxy family.
+
+
+        </p>
+        <br>
+
+        <button id="b2">LEARN MORE</button>
+
+    </div>
+    <div class="main6" id="section6"><strong>
+            <p style="text-align: center;font-size: 40px;">Gear IconX</p>
+        </strong>
+        <p style="text-align: center;">
+            The Gear IconX are cutting-edge wireless earbuds—as well as a portable music library,4 fitness tracker,
+            and<br>
+            personal coach.5 Whether standalone or connected to your Note9,6 you can listen to your playlists and<br>
+            podcasts, maximize your workouts, and log your progress, all without touching your phone.
+        </p>
+        <img src="img\pod.jpg" alt="pods" class="pod6">
+
+    </div>
+
+    <div class="main7" id="section7">
+
+        <strong>
+            <p style="font-size: 60px;color: aliceblue;">
+                Tablet mobility.<br>
+                PC power.
+            </p>
+        </strong>
+        <p style="color: aliceblue;font-size: 20px;">
+            The Galaxy Tab S4 gives you a stunningly brilliant screen, a<br> PC experience in a tablet and more.
+        </p>
+        <br>
+        <button id="b1">BUY NOW</button>
+        <!-- <img src="img\pc.png" class="pc7"/> -->
+
+    </div>
+    <div class="main8" id="section8">
+        <div class="main8-content">
+            <strong>
+                <p>
+                    Explore how the Galaxy Note9 <br>transforms the way you do business.
+                </p>
+            </strong>
+        </div>
+        <button id="b3">LEARN MORE</button>
+    </div>
+    <div class="main8" id="section8">
+        <strong>
+            <p style="font-size: 50px;">
+                Tablet mobility.<br>
+                PC power.
+
+            </p>
+        </strong>
+        <p style="font-size: 20px;">
+            The Galaxy Tab S4 gives you a stunningly brilliant screen, a PC experience in a tablet and more.
+
+        </p>
+    </div>
+</body>
+
+</html>
